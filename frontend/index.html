@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>SSA — Space Situational Awareness</title>
+<title>ExoDex - Infinity & Beyond</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
@@ -342,8 +342,8 @@
   <div id="brand">
     <div class="dot"></div>
     <div>
-      <div class="title">SSA · SPACE SITUATIONAL AWARENESS</div>
-      <div class="subtitle">LIVE ORBITAL TRACKING — TLE / SGP4</div>
+      <div class="title">ExoDex</div>
+      <div class="subtitle">Infinity & Beyond</div>
     </div>
   </div>
   <div style="display:flex; align-items:center; gap:0;">
@@ -406,7 +406,7 @@
   <div style="margin-top:12px; padding-top:10px; border-top:1px solid var(--panel-border);">
     <div class="panel-label" style="margin-bottom:6px;">SCREEN THIS GROUP AGAINST</div>
     <select id="compare-group-select" style="width:100%; margin-bottom:8px; background:#0a1220; border:1px solid var(--panel-border); color:var(--text); font-family:var(--mono); font-size:11px; padding:8px; border-radius:4px;">
-      <option value="cosmos-1408-debris" selected>COSMOS 1408 DEBRIS (recommended default)</option>
+      <option value="cosmos-1408-debris" selected>COSMOS 1408 DEBRIS (Recommended)</option>
       <option value="fengyun-1c-debris">FENGYUN-1C DEBRIS</option>
       <option value="iridium-33-debris">IRIDIUM 33 DEBRIS</option>
       <option value="cosmos-2251-debris">COSMOS 2251 DEBRIS</option>
@@ -414,7 +414,7 @@
       <option value="stations">STATIONS</option>
       <option value="starlink">STARLINK</option>
       <option value="visual">VISUAL</option>
-      <option value="__same__">SAME GROUP (noisy — includes co-located objects)</option>
+      <option value="__same__">SAME GROUP (noisy)</option>
     </select>
     <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
       <label for="threshold-input" style="font-family:var(--mono); font-size:10px; color:var(--muted); flex-shrink:0;">Threshold</label>
@@ -594,7 +594,7 @@
 // localhost), talks to a locally-running backend. When deployed, talks to
 // the hosted backend — fill in PRODUCTION_API_BASE below once you've
 // deployed the backend and know its real URL.
-const PRODUCTION_API_BASE = "https://YOUR-BACKEND-URL.onrender.com"; // <-- replace after deploying the backend
+//const PRODUCTION_API_BASE = "https://YOUR-BACKEND-URL.onrender.com"; // <-- replace after deploying the backend
 const API_BASE = (() => {
   const isLocal = ['localhost', '127.0.0.1', ''].includes(window.location.hostname) || window.location.protocol === 'file:';
   return isLocal ? "http://localhost:8000" : PRODUCTION_API_BASE;
